@@ -1,0 +1,27 @@
+
+<!DOCTYPE html><html><head>
+<meta charset='UTF-8'><meta name='viewport' content='width=device-width,initial-scale=1'>
+<title>Employee CRUD</title>
+<link rel='stylesheet' href='style.css'>
+<script src='https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js'></script>
+</head><body>
+<div class='container'>
+<h2>Employee Management</h2>
+<div id='loader' class='loader'>Loading...</div>
+<form id='empForm'>
+<input type='hidden' id='id'>
+<input placeholder='Name' id='name' required>
+<input placeholder='Age' id='age' required>
+<input placeholder='Mobile' id='mobile' required>
+<input placeholder='City' id='city' required>
+<input placeholder='Department' id='department' required>
+<input placeholder='Salary' id='salary' required>
+<button type='submit'>Save</button>
+</form>
+<table>
+<thead><tr><th>Name</th><th>Age</th><th>Mobile</th><th>City</th><th>Department</th><th>Salary</th><th>Action</th></tr></thead>
+<tbody id='tbody'></tbody>
+</table>
+</div>
+<script src='app.js'></script>
+</body></html>
